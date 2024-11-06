@@ -48,34 +48,7 @@ public class RegisterManager : MonoBehaviour
 
     public void OnPressDown(int i)
     {
-        switch (i)
-        {
-            case 1:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(30);
-                IAPManager.Instance.BuyProductID(Key.PACK1);
-                break;
-            case 2:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(60);
-                IAPManager.Instance.BuyProductID(Key.PACK2);
-                break;
-            case 3:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(90);
-                IAPManager.Instance.BuyProductID(Key.PACK3);
-                break;
-            case 4:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(180);
-                IAPManager.Instance.BuyProductID(Key.PACK4);
-                break;
-            case 5:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(360);
-                IAPManager.Instance.BuyProductID(Key.PACK5);
-                break;
-        }
+       
     }
 
     private void AddTime(int i)
